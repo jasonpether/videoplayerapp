@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UrlScreen">
+
+    <Button
+        android:id="@+id/myPlaylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="194dp"
+        android:backgroundTint="#9C27B0"
+        android:backgroundTintMode="add"
+        android:text="My Playlist"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/AddPlaylist"
+        app:layout_constraintTop_toBottomOf="@+id/AddPlaylist" />
+
+    <Button
+        android:id="@+id/AddPlaylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:backgroundTint="#4CAF50"
+        android:backgroundTintMode="add"
+        android:text="Add To Playlist!"
+        app:layout_constraintBottom_toTopOf="@+id/myPlaylist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PlayButton" />
+
+    <TextView
+        android:id="@+id/TVURLTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="131dp"
+        android:layout_marginBottom="23dp"
+        android:text="Youtube URL:"
+        app:layout_constraintBottom_toTopOf="@+id/ETEnterURL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ETEnterURL"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="67dp"
+        android:ems="10"
+        android:hint="Enter your Youtube URL!"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/PlayButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVURLTitle" />
+
+    <Button
+        android:id="@+id/PlayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="45dp"
+        android:backgroundTint="#196DAF"
+        android:backgroundTintMode="add"
+        android:text="Play"
+        app:layout_constraintBottom_toTopOf="@+id/AddPlaylist"
+        app:layout_constraintEnd_toEndOf="@+id/AddPlaylist"
+        app:layout_constraintTop_toBottomOf="@+id/ETEnterURL" />
+</androidx.constraintlayout.widget.ConstraintLayout>
